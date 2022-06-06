@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clay.modscan.Controller">
+   <children>
+      <AnchorPane prefHeight="105.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="lengthTextField" layoutX="177.0" layoutY="54.0" onKeyTyped="#typeLengthTextField" prefHeight="25.0" prefWidth="94.0" />
+            <Label layoutX="28.0" layoutY="14.0" text="Starting Address:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="startingAddressTextField" layoutX="177.0" layoutY="15.0" onKeyTyped="#typeStartingAddressTextField" prefHeight="25.0" prefWidth="94.0" />
+            <Label layoutX="106.0" layoutY="56.0" text="Length:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ipAddressTextField" layoutX="489.0" layoutY="15.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="386.0" layoutY="17.0" text="IP Address:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portNumberTextField" layoutX="501.0" layoutY="54.0" prefHeight="25.0" prefWidth="72.0" />
+            <Label layoutX="372.0" layoutY="56.0" text="Port Number:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="connectButton" layoutX="642.0" layoutY="15.0" mnemonicParsing="false" onAction="#clickConnectButton" text="Connect" />
+            <Button fx:id="disconnectButton" layoutX="634.0" layoutY="54.0" mnemonicParsing="false" onAction="#clickDisconnectButton" text="Disconnect" />
+         </children>
+      </AnchorPane>
+      <FlowPane fx:id="flowpane_body" hgap="50.0" orientation="VERTICAL" prefHeight="632.0" prefWidth="1062.0" vgap="5.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></FlowPane>
+   </children>
+</VBox>
