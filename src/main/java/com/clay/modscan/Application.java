@@ -16,7 +16,7 @@ public class Application extends javafx.application.Application {
         Parent root = loader.load(getClass().getResourceAsStream("hello-view.fxml"));
         c = loader.getController();
         Scene scene = new Scene(root);
-        stage.setTitle("Hello!");
+        stage.setTitle("Claymation Modscan");
         stage.setScene(scene);
         stage.show();
         stage.setOnCloseRequest(event -> {
