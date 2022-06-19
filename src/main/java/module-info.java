@@ -8,6 +8,7 @@ module com.example.modscan_update_test {
     requires validatorfx;
     requires eu.hansolo.tilesfx;
     requires EasyModbusJava;
+    requires jlibmodbus;
 
     opens com.clay.modscan to javafx.fxml;
     exports com.clay.modscan;

@@ -1,5 +1,5 @@
 package com.clay.modscan;
-
+import com.intelligt.modbus.jlibmodbus.Modbus;
 import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
